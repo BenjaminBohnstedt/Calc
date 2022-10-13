@@ -31,22 +31,22 @@
     width: auto;
 }   
 
+.calc-screen {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(1rem, 2.5vw, 3.7rem);
+    box-shadow: inset 1px 1px 0px  darkgray;
+    width: 100%;
+    height: clamp(1rem, 3vw, 4rem);
+    border: 1px solid rgb(50, 93, 107);
+    background: gainsboro;
+    color: #111;
+    padding: .125rem;
+}
+
 .grid-col-span-2 {
     grid-column: span 2;
 }
 
 .grid-col-span-4 {
     grid-column: span 4;
-}
-
-.calc-screen {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(1rem, 3vw, 3rem);
-    box-shadow: inset 1px 1px 0px  darkgray;
-    width: 100%;
-    max-height: 60px;
-    border: 1px solid rgb(50, 93, 107);
-    background: gainsboro;
-    color: #111;
-    padding: .125rem;
 }
