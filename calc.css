@@ -1,8 +1,30 @@
+/*
+    välj vilka färger du vill ha på miniräknaren här - använd alltid variabelnamnet 
+    fg: foreground
+    bg: background
+    line: line color
+*/
+
+:root {
+    --fg-clr-normal: #111;          /* standard för text */    
+    --bg-clr-light: gainsboro;
+    --bg-clr-gray: darkgray;
+    --bg-clr-iceblue: aliceblue;
+    --line-clr-blue: lightblue;
+    --line-clr-darkgray: rgb(50, 93, 107);
+}
+
+
+/* för hela sajten */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* global styling */
 
 .container {
     display: flex;
@@ -16,32 +38,35 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
-    background-color: aliceblue;
-    border: 2px solid lightblue;
-    box-shadow: .125rem .125rem .125rem gray;
+    background-color: var(--bg-clr-iceblue);
+    border: 2px solid var(--line-clr-blue);
+    box-shadow: .125rem .125rem .125rem var(--bg-clr-gray);
     min-width: 25%;
     min-height: 60%;
     padding: 1rem;
-    
 }
 
 .calc-btn {
-    font-size: 1em;
     height: auto;
     width: auto;
+    font-size: clamp(1rem, 2vw, 3rem);
+    font-weight: clamp(100, 300, 400);
 }   
 
 .calc-screen {
     font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(1rem, 2.5vw, 3.7rem);
-    box-shadow: inset 1px 1px 0px  darkgray;
+    font-size: clamp(.55rem, 3vw, 3.7rem);
+    box-shadow: inset 1px 1px 0px var(--bg-clr-gray);
     width: 100%;
     height: clamp(1rem, 3vw, 4rem);
-    border: 1px solid rgb(50, 93, 107);
-    background: gainsboro;
-    color: #111;
+    border: 1px solid var(--line-clr-darkgray);
+    background: var(--bg-clr-light);
+    color: var(--fg-clr-normal);
     padding: .125rem;
 }
+
+
+/* specifikt för grid */
 
 .grid-col-span-2 {
     grid-column: span 2;
