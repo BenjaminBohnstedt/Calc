@@ -41,21 +41,21 @@
     background-color: var(--bg-clr-iceblue);
     border: 2px solid var(--line-clr-blue);
     box-shadow: .125rem .125rem .125rem var(--bg-clr-gray);
-    min-width: 25%;
-    min-height: 60%;
+    min-width: 20%;
+    min-height: 35%;
     padding: 1rem;
 }
 
 .calc-btn {
     height: auto;
     width: auto;
-    font-size: clamp(1rem, 2vw, 3rem);
-    font-weight: clamp(100, 300, 400);
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    
 }   
 
 .calc-screen {
     font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(.55rem, 3vw, 3.7rem);
+    font-size: clamp(.55rem, 3vw, 3.5rem);
     box-shadow: inset 1px 1px 0px var(--bg-clr-gray);
     width: 100%;
     height: clamp(1rem, 3vw, 4rem);

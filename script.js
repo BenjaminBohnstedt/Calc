@@ -12,14 +12,13 @@ function btnCalc() {                    // denna funktion tar hand om beräkning
     sum = x + y;
     
     elemCalcScreen.innerHTML = sum;
-
 }
 
 function addDigit(thisSign) {           // lägg till siffra
     elemCalcScreen.innerHTML += thisSign;
 }
 
-function btnBackSpace() {           // ta bort
+function btnBackSpace() {               // ta bort
     let calcScreen = elemCalcScreen.innerHTML;
     calcScreen = calcScreen.slice(0, -1);
     elemCalcScreen.innerHTML = calcScreen;
