@@ -1,12 +1,15 @@
+/* global styling */
+
 /*
-    välj vilka färger du vill ha på miniräknaren här - använd alltid variabelnamnet 
+    choose the colours you want for the calculator here - always use the variable name 
+    
     fg: foreground
     bg: background
     line: line color
 */
 
 :root {
-    --fg-clr-normal: #111;          /* standard för text */    
+    --fg-clr-normal: #111;          /* standard for text */    
     --bg-clr-light: gainsboro;
     --bg-clr-gray: darkgray;
     --bg-clr-iceblue: aliceblue;
@@ -14,17 +17,11 @@
     --line-clr-darkgray: rgb(50, 93, 107);
 }
 
-
-/* för hela sajten */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* global styling */
 
 .container {
     display: flex;
@@ -37,6 +34,7 @@
 .main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     gap: .5rem;
     background-color: var(--bg-clr-iceblue);
     border: 2px solid var(--line-clr-blue);
@@ -47,9 +45,9 @@
 }
 
 .calc-btn {
-    height: auto;
+    height:  100%;
     width: auto;
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     
 }   
 
@@ -66,7 +64,7 @@
 }
 
 
-/* specifikt för grid */
+/* specifically for grid */
 
 .grid-col-span-2 {
     grid-column: span 2;
