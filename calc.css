@@ -1,3 +1,7 @@
+/*******************************
+CSS main
+********************************/
+
 /* global styling */
 
 /*
@@ -15,9 +19,11 @@
 
 :root {
     --fg-clr-normal: #111;                                      /* standard for text */    
-    --bg-clr-light: gainsboro;
+   
+    --bg-clr-light: gainsboro;                                  
     --bg-clr-gray: darkgray;
     --bg-clr-iceblue: aliceblue;
+   
     --line-clr-blue: lightblue;
     --line-clr-darkgray: rgb(50, 93, 107);
 }
