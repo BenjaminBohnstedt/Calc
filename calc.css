@@ -62,9 +62,12 @@ CSS main
     
 }   
 
-.calc-screen {                                                  /*calculator screen*/
+.calc-screen {  
+    display: flex;                                              /*Make sure the digits are centered in the middle*/
+    flex: 1;
+    align-items: center;                                        /*calculator screen*/
     font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(.55rem, 3vw, 3.5rem);                     /*clamp is useful if you want the page to be responsive. (minimum size, preferred size, max size) */
+    font-size: clamp(.55rem, 2vw, 3.5rem);                     /*clamp is useful if you want the page to be responsive. (minimum size, preferred size, max size) */
     box-shadow: inset 1px 1px 0px var(--bg-clr-gray);           /*inset means that the shadow is inside the element - not outside - used here to create the illusion of a real screen - feel free to remove and see what you like best */
     width: 100%;
     height: clamp(1rem, 3vw, 4rem);
