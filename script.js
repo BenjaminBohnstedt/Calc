@@ -5,13 +5,10 @@ const elemCalcScreen = document.getElementById("calc-screen");
 
 
 function btnCalc() {                    // denna funktion tar hand om beräkningen 
-    let sum = 0;
-    let x = 10;
-    let y = 5;
-    
-    sum = x + y;
-    
-    elemCalcScreen.innerHTML = sum;
+    /* your code here */
+    sum = result;
+
+    elemCalcScreen.innerHTML = sum;     // show the result on screen
 }
 
 function addDigit(thisSign) {           // lägg till siffra
